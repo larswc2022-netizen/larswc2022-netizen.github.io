@@ -1,0 +1,20 @@
+# Single source of truth for the TV menu.
+# type: video | web. url: full URL. icon: optional (verified: movie, pages, play-circle-outline, info).
+# open: inline (default, action link:) | window (action link:window:, external browser/new window if platform supports it).
+# Direct media files (.mp4/.m3u8/.mpd/.webm) of non-VK hosts are played by the MSX player (action video:).
+site:
+  name: "Моё ТВ-меню"
+  version: "1.0.0"
+  # Overridden by env BASE_URL in CI. Must be https, no trailing slash.
+  base_url: "https://USERNAME.github.io"
+items:
+  # PLACEHOLDERS: replace with your own links.
+  - title: "VK Видео"
+    type: video
+    url: "https://vkvideo.ru/"
+  - title: "Пример: прямое видео (из вики MSX)"
+    type: video
+    url: "http://msx.benzac.de/media/video1.mp4"
+  - title: "Сайт MSX Info"
+    type: web
+    url: "https://msx.benzac.de/info/"

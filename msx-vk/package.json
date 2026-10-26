@@ -1,0 +1,16 @@
+{
+  "name": "msx-vk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static MSX (Media Station X) menu generated from links.yaml",
+  "scripts": {
+    "build": "node src/build.js",
+    "validate": "node src/validate.js",
+    "test": "node --test \"test/*.test.js\"",
+    "serve": "http-server dist -p 8080 --cors -c-1 -s",
+    "check": "bash scripts/check-http.sh http://127.0.0.1:8080"
+  },
+  "dependencies": { "js-yaml": "^4.1.0" },
+  "devDependencies": { "http-server": "^14.1.1" },
+  "engines": { "node": ">=18" }
+}
